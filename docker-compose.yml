@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+
+  backendchiccrm:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 3636:3636
+
+# volumes:
